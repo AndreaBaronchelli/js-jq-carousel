@@ -4,6 +4,9 @@ $(document).ready(function() {
     //References
     var prevBtn = $("div.prev");
     var nextBtn = $("div.next");
+    var circles = $(".nav i");
+    var images = $(".images img");
+    var circles = $(".nav i");
 
     //On Click
     //Previous
@@ -25,6 +28,21 @@ $(document).ready(function() {
             nextPrevSlide("next");
         }
     });
+
+    //BONUS
+    console.log(images[0]);
+    circles.click(function(){
+        var index = circles.index(this);
+
+        circles.removeClass("active");
+        images.removeClass("active");
+
+        $(images[index]).addClass("active");
+        $(circles[index]).addClass("active");
+    });
+
+
+
 
 //End doc ready
 });
