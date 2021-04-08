@@ -30,7 +30,6 @@ $(document).ready(function() {
     });
 
     //BONUS
-    console.log(images[0]);
     circles.click(function(){
         var index = circles.index(this);
 
